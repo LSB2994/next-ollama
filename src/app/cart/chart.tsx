@@ -19,7 +19,7 @@ export default function ChatApp() {
 
     try {
       const response = await fetch(
-        `http://localhost:8080/chat?m=${encodeURIComponent(input)}`,
+        `http://172.27.184.67:8080/chat?m=${encodeURIComponent(input)}`,
         {
           method: "GET",
           headers: { Accept: "application/json" },
